@@ -1,44 +1,44 @@
 //! Слайдер Start
 
-$(document).ready(function () {
-  $('.slider-container').slick({
-    arrows: true,
-    adaptiveHeight: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    swipe: true,
-    touchThreshold: 10,
-    centerMode: true,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
+// $(document).ready(function () {
+//   $('.slider-container').slick({
+//     arrows: true,
+//     adaptiveHeight: true,
+//     slidesToShow: 2,
+//     slidesToScroll: 2,
+//     swipe: true,
+//     touchThreshold: 10,
+//     centerMode: true,
+//     focusOnSelect: true,
+//     responsive: [
+//       {
+//         breakpoint: 1200,
+//         settings: {
+//           slidesToShow: 2,
+//         },
+//       },
+//       {
+//         breakpoint: 1000,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//       {
+//         breakpoint: 800,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
 
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-});
+//       {
+//         breakpoint: 520,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//     ],
+//   });
+// });
 
 // Мобильное меню
 let burgerMenu = document.querySelector('.burger-menu');
