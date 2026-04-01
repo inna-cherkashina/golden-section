@@ -189,6 +189,13 @@
   .about-event-img-box img {
     display: none;
   }
+  .about-color__container {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
   .mob-about-event-img-box {
     width: 100%;
     height: 343px;
