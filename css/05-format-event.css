@@ -40,13 +40,43 @@
 .description-dark-box__element {
   max-width: 345px;
   background: #6d7e7b8c;
-  padding: 35px 24px;
+  padding: 20px;
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
+}
+.description-dark-box__element span {
+  display: block;
+  padding: 20px 0px 0px 0px;
+}
+
+@media (max-width: 666px) {
+  .format-event-flexbox__container {
+    gap: 16px;
+  }
+
+  .event-light-box {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .description-light-box__element {
+    max-width: 100%;
+  }
+  .event-dark-box {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .description-dark-box__element {
+    max-width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+  .description-dark-box__element span {
+    padding: 16px 0px 0px 0px;
+  }
 }
