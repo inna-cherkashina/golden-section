@@ -2,6 +2,7 @@
 @import url('./css/02-banner.css');
 @import url('./css/03-about-event.css');
 @import url('./css/04-section-artists.css');
+@import url('./css/05-format-event.css');
 
 * {
   box-sizing: border-box;
