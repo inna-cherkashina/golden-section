@@ -127,6 +127,9 @@
 }
 
 @media (max-width: 950px) {
+  .section-parallax {
+    height: 1373px;
+  }
   .wrapper {
     height: auto;
     padding: 0px 0px 0px 0px;
@@ -157,6 +160,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .section-parallax {
+    height: 1425px;
+  }
+}
+
 @media (max-width: 666px) {
   .section-parallax__title {
     font-weight: 700;
@@ -168,6 +177,7 @@
     position: relative;
     top: 130px;
     width: 90%;
+    font-size: 16px;
   }
 
   .section-parallax__img-2 {
@@ -179,5 +189,6 @@
     top: 70px;
     width: 90%;
     right: 0%;
+    font-size: 16px;
   }
 }
