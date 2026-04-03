@@ -28,3 +28,9 @@ footer {
   line-height: 100%;
   color: #fff;
 }
+
+@media (max-width: 666px) {
+  .footer-container {
+    gap: 80px;
+  }
+}
