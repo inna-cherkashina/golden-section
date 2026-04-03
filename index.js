@@ -1,45 +1,3 @@
-//! Слайдер Start
-
-// $(document).ready(function () {
-//   $('.slider-container').slick({
-//     arrows: true,
-//     adaptiveHeight: true,
-//     slidesToShow: 2,
-//     slidesToScroll: 2,
-//     swipe: true,
-//     touchThreshold: 10,
-//     centerMode: true,
-//     focusOnSelect: true,
-//     responsive: [
-//       {
-//         breakpoint: 1200,
-//         settings: {
-//           slidesToShow: 2,
-//         },
-//       },
-//       {
-//         breakpoint: 1000,
-//         settings: {
-//           slidesToShow: 1,
-//         },
-//       },
-//       {
-//         breakpoint: 800,
-//         settings: {
-//           slidesToShow: 1,
-//         },
-//       },
-
-//       {
-//         breakpoint: 520,
-//         settings: {
-//           slidesToShow: 1,
-//         },
-//       },
-//     ],
-//   });
-// });
-
 // Мобильное меню
 let burgerMenu = document.querySelector('.burger-menu');
 let mobileMenu = document.querySelector('.mobile-menu');
@@ -67,3 +25,22 @@ listItems.forEach(function (item) {
     mobileMenu.classList.add('mobile-disactive');
   });
 });
+
+//TODO Аккордион Start
+let accordeons = document.querySelectorAll('.accordion-header');
+accordeons.forEach(function (accord) {
+  accord.addEventListener('click', function (elem) {
+    let action = elem.target;
+    let currentAccordElem = action.closest('.accordion-header'); //определяем текущий бокс
+    let currentContent = action.nextElementSibling; // находим скрытый контент
+    currentAccordElem.classList.toggle('active'); //присваиваем основному контейнеру флаг активности
+    if (currentAccordElem.classList.contains('active')) {
+      currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+      //Обратить внимание чтоб стили были присвоены классу .accordion-collapse
+      reachGoal('camp_2024_accord', { block: currentAccordElem.innerText });
+    } else {
+      currentContent.style.maxHeight = 0;
+    }
+  });
+});
+//TODO Аккордион End

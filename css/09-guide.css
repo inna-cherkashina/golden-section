@@ -1,0 +1,238 @@
+.guide-info__flexbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.faq__container {
+  width: 100%;
+}
+
+.guide-title {
+  color: #213247;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.guide-title-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  padding: 16px 0px 0px;
+}
+
+.guide-info__flexbox {
+  margin: 55px 0px 0px 0px;
+}
+
+.faq__accordion {
+  width: 100%;
+  padding: 50px;
+  background: var(--bg-color-1);
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-item {
+  position: relative;
+  padding: 30px 74px 30px 30px;
+  background: #eef0f2;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.accordion-collapse {
+  overflow: hidden;
+  max-height: 0;
+  /* Скрываем контент */
+  transition: 0.3s;
+}
+
+.accordion-body {
+  padding: 20px 0px 0px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.accordion-body.accordion-body-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.accordion-body a {
+  padding: 20px 0px 0px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #cca862;
+  text-decoration: underline;
+}
+
+.accordion-body p {
+  margin: 0px 0px 10px 0px;
+}
+
+.accordion-header::after {
+  position: absolute;
+  content: url('../images/arr-accordeon.svg');
+  color: var(--hero-color);
+  top: 0px;
+  right: -20px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.accordion-header.active::after {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.guide-contacts__section {
+  width: 402px;
+  padding: 50px;
+  background: var(--bg-color-1);
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.guide-contacts__title {
+  font-family: var(--fw-family);
+  font-size: var(--fsz-medium);
+  font-weight: var(--fw-medium);
+  margin: 0px 0px 50px 0px;
+}
+
+.guide-contacts__text {
+  font-family: var(--fw-family);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+  margin: 0px 0px 25px 0px;
+}
+
+.guide-contacts__text .guide-phone {
+  text-decoration: none;
+}
+
+.guide-contacts__text a,
+.guide-contacts__text p {
+  color: black;
+  font-family: var(--fw-family);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-bold);
+}
+
+.guide-contacts__text a {
+  text-decoration: underline;
+}
+
+.guide-contacts__text:last-child {
+  margin: 0px;
+}
+
+@media (max-width: 1300px) {
+  .guide-info__flexbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .accordion {
+    width: auto;
+  }
+
+  .guide-contacts__section {
+    width: 689px;
+  }
+}
+
+@media (max-width: 745px) {
+  .guide-contacts__section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+  .guide__section .title-text__container,
+  .faq__section .title-text__container {
+    margin: 0px 0px 45px 0px;
+  }
+
+  .accordion,
+  .faq__accordion {
+    padding: 30px;
+  }
+
+  .guide__section .center,
+  .faq__section .center {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .accordion-header {
+    font-size: 20px;
+  }
+
+  .accordion-header::after {
+    content: url('../images/arr-mini-accordeon.svg');
+    top: -4px;
+    right: -20px;
+  }
+
+  .accordion-body {
+    font-size: var(--fsz-little-plus);
+  }
+
+  .guide-contacts__text a,
+  .guide-contacts__text {
+    font-size: var(--fsz-little-plus);
+  }
+}
+
+@media (max-width: 550px) {
+  .guide__section,
+  .faq__section {
+    padding: 65px 0px 0px 0px;
+  }
+
+  .guide-info__flexbox,
+  .faq__container {
+    margin: 35px 0px 0px 0px;
+  }
+}

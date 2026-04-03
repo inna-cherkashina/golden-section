@@ -6,6 +6,7 @@
 @import url('./css/06-parallax.css');
 @import url('./css/07-golden-section-data.css');
 @import url('./css/08-vilavi-go-dates.css');
+@import url('./css/09-guide.css');
 
 * {
   box-sizing: border-box;
@@ -15,6 +16,7 @@ body {
   font-family: 'DINPro';
   scroll-behavior: smooth;
   margin: 0px;
+  color: #213247;
 }
 
 p {
@@ -63,8 +65,7 @@ h6 {
 }
 
 ul {
-  padding: 0px;
-  list-style-type: none;
+  margin: 0px;
 }
 
 a {
